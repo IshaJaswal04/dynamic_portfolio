@@ -1,0 +1,7 @@
+Django>=5.0,<6.0
+gunicorn
+whitenoise
+django-cors-headers
+mysqlclient
+python-dotenv
+djangorestframework
