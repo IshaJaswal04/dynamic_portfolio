@@ -72,7 +72,7 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    https://dynamic-portfolio-frontend-iota.vercel.app/,
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
@@ -158,10 +158,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-if REACT_BUILD_DIR.exists():
-    STATICFILES_DIRS = [REACT_BUILD_DIR / 'static']
-else:
-    STATICFILES_DIRS = []
+if os.path.exists(REACT_BUILD_DIR):
+    STATICFILES_DIRS = [os.path.join(REACT_BUILD_DIR, 'static')]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
