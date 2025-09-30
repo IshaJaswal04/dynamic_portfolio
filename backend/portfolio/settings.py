@@ -157,9 +157,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    os.path.join(REACT_BUILD_DIR, 'static')
-]
+
+if REACT_BUILD_DIR.exists():
+    STATICFILES_DIRS = [REACT_BUILD_DIR / 'static']
+else:
+    STATICFILES_DIRS = []
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
