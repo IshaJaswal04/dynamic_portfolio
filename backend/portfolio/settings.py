@@ -72,7 +72,7 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    https://dynamic-portfolio-frontend-iota.vercel.app/,
+    "https://dynamic-portfolio-frontend-iota.vercel.app/",
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
