@@ -6,3 +6,4 @@ mysqlclient
 python-dotenv
 djangorestframework
 Pillow
+dj-database-url==1.2.0
