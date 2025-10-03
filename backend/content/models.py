@@ -2,7 +2,7 @@ from django.db import models
 from cloudinary.models import CloudinaryField
 
 class Logo(models.Model):
-    logo = CloudinaryField('logo', blank=True)
+    logo = CloudinaryField('logo', blank=True, null=True)
 
 class Navbar(models.Model):
     name = models.CharField(max_length=100)
