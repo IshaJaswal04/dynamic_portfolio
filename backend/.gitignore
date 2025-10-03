@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment
+.env
+
+# Media (optional, if you don't want to track uploads)
+media/

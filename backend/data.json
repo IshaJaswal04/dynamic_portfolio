@@ -1,0 +1,1328 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "about"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "project"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "skill"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "contactinfo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "certificate"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "experience"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "home"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "footer"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "navbar"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "contact"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "contactform"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "abouthero"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "education"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "cta"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "contactdetails"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "contacthero"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "skillhero"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "formdetail"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "softskills"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "content",
+        "model": "logo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add about",
+        "content_type": [
+            "content",
+            "about"
+        ],
+        "codename": "add_about"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change about",
+        "content_type": [
+            "content",
+            "about"
+        ],
+        "codename": "change_about"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete about",
+        "content_type": [
+            "content",
+            "about"
+        ],
+        "codename": "delete_about"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view about",
+        "content_type": [
+            "content",
+            "about"
+        ],
+        "codename": "view_about"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add project",
+        "content_type": [
+            "content",
+            "project"
+        ],
+        "codename": "add_project"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change project",
+        "content_type": [
+            "content",
+            "project"
+        ],
+        "codename": "change_project"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete project",
+        "content_type": [
+            "content",
+            "project"
+        ],
+        "codename": "delete_project"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view project",
+        "content_type": [
+            "content",
+            "project"
+        ],
+        "codename": "view_project"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add skill",
+        "content_type": [
+            "content",
+            "skill"
+        ],
+        "codename": "add_skill"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change skill",
+        "content_type": [
+            "content",
+            "skill"
+        ],
+        "codename": "change_skill"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete skill",
+        "content_type": [
+            "content",
+            "skill"
+        ],
+        "codename": "delete_skill"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view skill",
+        "content_type": [
+            "content",
+            "skill"
+        ],
+        "codename": "view_skill"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add contact info",
+        "content_type": [
+            "content",
+            "contactinfo"
+        ],
+        "codename": "add_contactinfo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change contact info",
+        "content_type": [
+            "content",
+            "contactinfo"
+        ],
+        "codename": "change_contactinfo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete contact info",
+        "content_type": [
+            "content",
+            "contactinfo"
+        ],
+        "codename": "delete_contactinfo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view contact info",
+        "content_type": [
+            "content",
+            "contactinfo"
+        ],
+        "codename": "view_contactinfo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add certificate",
+        "content_type": [
+            "content",
+            "certificate"
+        ],
+        "codename": "add_certificate"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change certificate",
+        "content_type": [
+            "content",
+            "certificate"
+        ],
+        "codename": "change_certificate"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete certificate",
+        "content_type": [
+            "content",
+            "certificate"
+        ],
+        "codename": "delete_certificate"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view certificate",
+        "content_type": [
+            "content",
+            "certificate"
+        ],
+        "codename": "view_certificate"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add experience",
+        "content_type": [
+            "content",
+            "experience"
+        ],
+        "codename": "add_experience"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change experience",
+        "content_type": [
+            "content",
+            "experience"
+        ],
+        "codename": "change_experience"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete experience",
+        "content_type": [
+            "content",
+            "experience"
+        ],
+        "codename": "delete_experience"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view experience",
+        "content_type": [
+            "content",
+            "experience"
+        ],
+        "codename": "view_experience"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add home",
+        "content_type": [
+            "content",
+            "home"
+        ],
+        "codename": "add_home"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change home",
+        "content_type": [
+            "content",
+            "home"
+        ],
+        "codename": "change_home"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete home",
+        "content_type": [
+            "content",
+            "home"
+        ],
+        "codename": "delete_home"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view home",
+        "content_type": [
+            "content",
+            "home"
+        ],
+        "codename": "view_home"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add footer",
+        "content_type": [
+            "content",
+            "footer"
+        ],
+        "codename": "add_footer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change footer",
+        "content_type": [
+            "content",
+            "footer"
+        ],
+        "codename": "change_footer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete footer",
+        "content_type": [
+            "content",
+            "footer"
+        ],
+        "codename": "delete_footer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view footer",
+        "content_type": [
+            "content",
+            "footer"
+        ],
+        "codename": "view_footer"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add navbar",
+        "content_type": [
+            "content",
+            "navbar"
+        ],
+        "codename": "add_navbar"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change navbar",
+        "content_type": [
+            "content",
+            "navbar"
+        ],
+        "codename": "change_navbar"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete navbar",
+        "content_type": [
+            "content",
+            "navbar"
+        ],
+        "codename": "delete_navbar"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view navbar",
+        "content_type": [
+            "content",
+            "navbar"
+        ],
+        "codename": "view_navbar"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add contact",
+        "content_type": [
+            "content",
+            "contact"
+        ],
+        "codename": "add_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change contact",
+        "content_type": [
+            "content",
+            "contact"
+        ],
+        "codename": "change_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete contact",
+        "content_type": [
+            "content",
+            "contact"
+        ],
+        "codename": "delete_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view contact",
+        "content_type": [
+            "content",
+            "contact"
+        ],
+        "codename": "view_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add contactform",
+        "content_type": [
+            "content",
+            "contactform"
+        ],
+        "codename": "add_contactform"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change contactform",
+        "content_type": [
+            "content",
+            "contactform"
+        ],
+        "codename": "change_contactform"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete contactform",
+        "content_type": [
+            "content",
+            "contactform"
+        ],
+        "codename": "delete_contactform"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view contactform",
+        "content_type": [
+            "content",
+            "contactform"
+        ],
+        "codename": "view_contactform"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add about hero",
+        "content_type": [
+            "content",
+            "abouthero"
+        ],
+        "codename": "add_abouthero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change about hero",
+        "content_type": [
+            "content",
+            "abouthero"
+        ],
+        "codename": "change_abouthero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete about hero",
+        "content_type": [
+            "content",
+            "abouthero"
+        ],
+        "codename": "delete_abouthero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view about hero",
+        "content_type": [
+            "content",
+            "abouthero"
+        ],
+        "codename": "view_abouthero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add education",
+        "content_type": [
+            "content",
+            "education"
+        ],
+        "codename": "add_education"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change education",
+        "content_type": [
+            "content",
+            "education"
+        ],
+        "codename": "change_education"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete education",
+        "content_type": [
+            "content",
+            "education"
+        ],
+        "codename": "delete_education"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view education",
+        "content_type": [
+            "content",
+            "education"
+        ],
+        "codename": "view_education"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add cta",
+        "content_type": [
+            "content",
+            "cta"
+        ],
+        "codename": "add_cta"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change cta",
+        "content_type": [
+            "content",
+            "cta"
+        ],
+        "codename": "change_cta"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete cta",
+        "content_type": [
+            "content",
+            "cta"
+        ],
+        "codename": "delete_cta"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view cta",
+        "content_type": [
+            "content",
+            "cta"
+        ],
+        "codename": "view_cta"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add contact details",
+        "content_type": [
+            "content",
+            "contactdetails"
+        ],
+        "codename": "add_contactdetails"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change contact details",
+        "content_type": [
+            "content",
+            "contactdetails"
+        ],
+        "codename": "change_contactdetails"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete contact details",
+        "content_type": [
+            "content",
+            "contactdetails"
+        ],
+        "codename": "delete_contactdetails"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view contact details",
+        "content_type": [
+            "content",
+            "contactdetails"
+        ],
+        "codename": "view_contactdetails"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add contact hero",
+        "content_type": [
+            "content",
+            "contacthero"
+        ],
+        "codename": "add_contacthero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change contact hero",
+        "content_type": [
+            "content",
+            "contacthero"
+        ],
+        "codename": "change_contacthero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete contact hero",
+        "content_type": [
+            "content",
+            "contacthero"
+        ],
+        "codename": "delete_contacthero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view contact hero",
+        "content_type": [
+            "content",
+            "contacthero"
+        ],
+        "codename": "view_contacthero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add skill hero",
+        "content_type": [
+            "content",
+            "skillhero"
+        ],
+        "codename": "add_skillhero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change skill hero",
+        "content_type": [
+            "content",
+            "skillhero"
+        ],
+        "codename": "change_skillhero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete skill hero",
+        "content_type": [
+            "content",
+            "skillhero"
+        ],
+        "codename": "delete_skillhero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view skill hero",
+        "content_type": [
+            "content",
+            "skillhero"
+        ],
+        "codename": "view_skillhero"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add formdetail",
+        "content_type": [
+            "content",
+            "formdetail"
+        ],
+        "codename": "add_formdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change formdetail",
+        "content_type": [
+            "content",
+            "formdetail"
+        ],
+        "codename": "change_formdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete formdetail",
+        "content_type": [
+            "content",
+            "formdetail"
+        ],
+        "codename": "delete_formdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view formdetail",
+        "content_type": [
+            "content",
+            "formdetail"
+        ],
+        "codename": "view_formdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add softskills",
+        "content_type": [
+            "content",
+            "softskills"
+        ],
+        "codename": "add_softskills"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change softskills",
+        "content_type": [
+            "content",
+            "softskills"
+        ],
+        "codename": "change_softskills"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete softskills",
+        "content_type": [
+            "content",
+            "softskills"
+        ],
+        "codename": "delete_softskills"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view softskills",
+        "content_type": [
+            "content",
+            "softskills"
+        ],
+        "codename": "view_softskills"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add logo",
+        "content_type": [
+            "content",
+            "logo"
+        ],
+        "codename": "add_logo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change logo",
+        "content_type": [
+            "content",
+            "logo"
+        ],
+        "codename": "change_logo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete logo",
+        "content_type": [
+            "content",
+            "logo"
+        ],
+        "codename": "delete_logo"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view logo",
+        "content_type": [
+            "content",
+            "logo"
+        ],
+        "codename": "view_logo"
+    }
+}
+]

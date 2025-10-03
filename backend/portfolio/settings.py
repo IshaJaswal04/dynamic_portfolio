@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'content',
+    'cloudinary',
+    'cloudinary_storage',
     
 ]
 
@@ -162,6 +164,17 @@ CORS_ALLOW_ALL_ORIGINS = True
 #MEDIA setting
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dce2v14rs',
+    'API_KEY': '263498782936128',
+    'API_SECRET': 'S2gUi9wx1oiNkCTKEbAUU6KWU-Q'
+
+
+
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 
