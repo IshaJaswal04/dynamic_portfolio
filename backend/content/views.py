@@ -1,122 +1,101 @@
 from rest_framework import generics
-from .models import (
-    Navbar, Footer, Home, About, Skill, Project, ContactInfo, Certificate, Experience,
-    Contact, Contactform, AboutHero, Education, CTA, ContactHero, ContactDetails,
-    SkillHero, Formdetail, Softskills, Logo
-)
-from .serializers import (
-    NavbarSerializers, FooterSerializers, HomeSerializers, AboutSerializers,
-    SkillSerializers, ProjectSerializers, ContactInfoSerializers, CertificateSerializers,
-    ExperienceSerializers, ContactSerializers, ContactformSerializers, AboutHeroSerializers,
-    EducationSerializers, CTASerializers, ContactHeroSerializers, ContactDetailsSerializers,
-    SkillHeroSerializers, FormdetailSerializers, SoftskillsSerializers, LogoSerializers
-)
+from .models import Navbar, Footer, Home, About, Skill, Project, ContactInfo, Certificate, Experience, Contact, Contactform, AboutHero, Education, CTA, ContactHero, ContactDetails, SkillHero, Formdetail, Softskills, Logo
+from .serializers import (NavbarSerializers, FooterSerializers, HomeSerializers, AboutSerializers, SkillSerializers, ProjectSerializers, ContactInfoSerializers,
+CertificateSerializers, ExperienceSerializers, ContactSerializers, ContactformSerializers, AboutHeroSerializers, EducationSerializers, CTASerializers, ContactHeroSerializers, ContactDetailsSerializers, SkillHeroSerializers, FormdetailSerializers, SoftskillsSerializers, LogoSerializers)
 
 
-# 🔹 Base view that injects request context
-class BaseListCreateView(generics.ListCreateAPIView):
-    def get_serializer_context(self):
-        context = super().get_serializer_context()
-        context.update({"request": self.request})
-        return context
 
 
-class LogoListCreateView(BaseListCreateView):
+class LogoListCreateView(generics.ListCreateAPIView):
     queryset = Logo.objects.all()
     serializer_class = LogoSerializers
 
 
-class SoftskillsListCreateView(BaseListCreateView):
+class SoftskillsListCreateView(generics.ListCreateAPIView):
     queryset = Softskills.objects.all()
     serializer_class = SoftskillsSerializers
 
 
-class FormdetailListCreateView(BaseListCreateView):
+
+
+class FormdetailListCreateView(generics.ListCreateAPIView):
     queryset = Formdetail.objects.all()
     serializer_class = FormdetailSerializers
 
 
-class SkillHeroListCreateView(BaseListCreateView):
+class SkillHeroListCreateView(generics.ListCreateAPIView):
     queryset = SkillHero.objects.all()
     serializer_class = SkillHeroSerializers
 
 
-class ContactHeroListCreateView(BaseListCreateView):
+
+class ContactHeroListCreateView(generics.ListCreateAPIView):
     queryset = ContactHero.objects.all()
     serializer_class = ContactHeroSerializers
 
-
-class ContactDetailsListCreateView(BaseListCreateView):
+class ContactDetailsListCreateView(generics.ListCreateAPIView):
     queryset = ContactDetails.objects.all()
     serializer_class = ContactDetailsSerializers
 
 
-class CTAListCreateView(BaseListCreateView):
+
+class CTAListCreateView(generics.ListCreateAPIView):
     queryset = CTA.objects.all()
     serializer_class = CTASerializers
 
 
-class EducationListCreateView(BaseListCreateView):
+class EducationListCreateView(generics.ListCreateAPIView):
     queryset = Education.objects.all()
     serializer_class = EducationSerializers
 
 
-class NavbarListCreateView(BaseListCreateView):
+class NavbarListCreateView(generics.ListCreateAPIView):
     queryset = Navbar.objects.all().order_by('order')
     serializer_class = NavbarSerializers
 
 
-class FooterListCreateView(BaseListCreateView):
+class FooterListCreateView(generics.ListCreateAPIView):
     queryset = Footer.objects.all()
     serializer_class = FooterSerializers
 
 
-class HomeListCreateView(BaseListCreateView):
+class HomeListCreateView(generics.ListCreateAPIView):
     queryset = Home.objects.all()
     serializer_class = HomeSerializers
 
-
-class AboutListCreateView(BaseListCreateView):
+class AboutListCreateView(generics.ListCreateAPIView):
     queryset = About.objects.all()
     serializer_class = AboutSerializers
 
-
-class SkillListCreateView(BaseListCreateView):
+class SkillListCreateView(generics.ListCreateAPIView):
     queryset = Skill.objects.all()
     serializer_class = SkillSerializers
 
-
-class ProjectListCreateView(BaseListCreateView):
+class ProjectListCreateView(generics.ListCreateAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializers
 
-
-class ContactInfoListCreateView(BaseListCreateView):
+class ContactInfoListCreateView(generics.ListCreateAPIView):
     queryset = ContactInfo.objects.all()
     serializer_class = ContactInfoSerializers
 
-
-class CertificateListCreateView(BaseListCreateView):
+class CertificateListCreateView(generics.ListCreateAPIView):
     queryset = Certificate.objects.all()
     serializer_class = CertificateSerializers
 
-
-class ExperienceListCreateView(BaseListCreateView):
+class ExperienceListCreateView(generics.ListCreateAPIView):
     queryset = Experience.objects.all()
     serializer_class = ExperienceSerializers
 
-
-class ContactListCreateView(BaseListCreateView):
+class ContactListCreateView(generics.ListCreateAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializers
 
-
-class ContactformListCreateView(BaseListCreateView):
+class ContactformListCreateView(generics.ListCreateAPIView):
     queryset = Contactform.objects.all()
     serializer_class = ContactformSerializers
 
-
-class AboutHeroListCreateView(BaseListCreateView):
+class AboutHeroListCreateView(generics.ListCreateAPIView):
     queryset = AboutHero.objects.all()
     serializer_class = AboutHeroSerializers
 

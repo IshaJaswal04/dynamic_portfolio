@@ -1,142 +1,116 @@
 from rest_framework import serializers
-from .models import (
-    Navbar, Footer, Home, About, Skill, Project, ContactInfo, Certificate, Experience,
-    Contact, Contactform, AboutHero, Education, CTA, ContactHero, ContactDetails,
-    SkillHero, Formdetail, Softskills, Logo
-)
-
-# 🔹 Base serializer that fixes media URLs
-class AbsoluteUrlModelSerializer(serializers.ModelSerializer):
-    """
-    Ensures that all FileField / ImageField return absolute URLs.
-    """
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        request = self.context.get("request")
-
-        for field_name, field_value in representation.items():
-            field = self.fields.get(field_name)
-            if field and isinstance(field, (serializers.ImageField, serializers.FileField)):
-                if field_value and request:
-                    representation[field_name] = request.build_absolute_uri(field_value)
-        return representation
+from .models import Navbar, Footer, Home, About, Skill, Project, ContactInfo, Certificate, Experience, Contact, Contactform, AboutHero, Education, CTA, ContactHero, ContactDetails, SkillHero, Formdetail, Softskills, Logo
 
 
-class LogoSerializers(AbsoluteUrlModelSerializer):
+class LogoSerializers(serializers.ModelSerializer):
     class Meta:
         model = Logo
         fields = "__all__"
 
 
-class SoftskillsSerializers(AbsoluteUrlModelSerializer):
+class SoftskillsSerializers(serializers.ModelSerializer):
     class Meta:
         model = Softskills
         fields = '__all__'
 
 
-class FormdetailSerializers(AbsoluteUrlModelSerializer):
+
+
+class FormdetailSerializers(serializers.ModelSerializer):
     class Meta:
         model = Formdetail
         fields = '__all__'
 
 
-class SkillHeroSerializers(AbsoluteUrlModelSerializer):
+class SkillHeroSerializers(serializers.ModelSerializer):
     class Meta:
         model = SkillHero
         fields = '__all__'
 
 
-class ContactHeroSerializers(AbsoluteUrlModelSerializer):
+class ContactHeroSerializers(serializers.ModelSerializer):
     class Meta:
         model = ContactHero
         fields = '__all__'
 
-
-class ContactDetailsSerializers(AbsoluteUrlModelSerializer):
+class ContactDetailsSerializers(serializers.ModelSerializer):
     class Meta:
         model = ContactDetails
         fields = '__all__'
 
 
-class CTASerializers(AbsoluteUrlModelSerializer):
+
+
+class CTASerializers(serializers.ModelSerializer):
     class Meta:
         model = CTA
         fields = '__all__'
 
 
-class EducationSerializers(AbsoluteUrlModelSerializer):
+class EducationSerializers(serializers.ModelSerializer):
     class Meta:
         model = Education
         fields = '__all__'
 
-
-class AboutHeroSerializers(AbsoluteUrlModelSerializer):
+class AboutHeroSerializers(serializers.ModelSerializer):
     class Meta:
         model = AboutHero
         fields = '__all__'
 
 
-class ContactformSerializers(AbsoluteUrlModelSerializer):
+class ContactformSerializers(serializers.ModelSerializer):
     class Meta:
         model = Contactform
         fields = '__all__'
 
-
-class ContactSerializers(AbsoluteUrlModelSerializer):
+class ContactSerializers(serializers.ModelSerializer):
     class Meta:
         model = Contact
-        fields = '__all__'
+        fields = '__all__'  
 
-
-class NavbarSerializers(AbsoluteUrlModelSerializer):
+class NavbarSerializers(serializers.ModelSerializer):
     class Meta:
         model = Navbar
         fields = '__all__'
 
-
-class FooterSerializers(AbsoluteUrlModelSerializer):
+class FooterSerializers(serializers.ModelSerializer):
+    icon = serializers.ImageField(use_url=True) 
     class Meta:
         model = Footer
         fields = '__all__'
 
-
-class HomeSerializers(AbsoluteUrlModelSerializer):
+class HomeSerializers(serializers.ModelSerializer):
     class Meta:
         model = Home
         fields = '__all__'
 
 
-class AboutSerializers(AbsoluteUrlModelSerializer):
+class AboutSerializers(serializers.ModelSerializer):
     class Meta:
         model = About
         fields = '__all__'
 
-
-class SkillSerializers(AbsoluteUrlModelSerializer):
+class SkillSerializers(serializers.ModelSerializer):
     class Meta:
         model = Skill
         fields = '__all__'
 
-
-class ProjectSerializers(AbsoluteUrlModelSerializer):
+class ProjectSerializers(serializers.ModelSerializer):
     class Meta:
         model = Project
         fields = '__all__'
 
-
-class ContactInfoSerializers(AbsoluteUrlModelSerializer):
+class ContactInfoSerializers(serializers.ModelSerializer):
     class Meta:
         model = ContactInfo
         fields = '__all__'
 
-
-class CertificateSerializers(AbsoluteUrlModelSerializer):
+class CertificateSerializers(serializers.ModelSerializer):
     class Meta:
         model = Certificate
         fields = '__all__'
 
-
-class ExperienceSerializers(AbsoluteUrlModelSerializer):
+class ExperienceSerializers(serializers.ModelSerializer):
     class Meta:
         model = Experience
         fields = '__all__'
