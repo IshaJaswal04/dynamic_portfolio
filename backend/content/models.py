@@ -1,7 +1,7 @@
 from django.db import models
 
 class Logo(models.Model):
-    logo = models.ImageField(upload_to = '',blank = True)
+    logo = models.ImageField(blank = True)
 
     
 
@@ -27,9 +27,9 @@ class Footer(models.Model):
     Linkdinlink  = models.CharField(max_length = 100, null = True)
     order = models.PositiveIntegerField(default = 0)
     is_active = models.BooleanField(default = True)
-    icon = models.ImageField(upload_to = 'footer_icons/', blank = True, null = True)
+    icon = models.ImageField(blank = True, null = True)
     icon_desc = models.CharField(max_length = 50, null = True)
-    icon2 = models.ImageField(upload_to = 'footer_icons/', blank = True, null = True)
+    icon2 = models.ImageField(blank = True, null = True)
     icon2_desc = models.CharField(max_length = 50, null = True)
 
     def __str__(self):
@@ -44,8 +44,8 @@ class Home(models.Model):
     subHeading = models.CharField(max_length = 200, null = True)
     Tagline = models.CharField(max_length = 400, null = True)
     buttonText = models.CharField(max_length = 50, null = True)
-    profile_image = models.ImageField(upload_to = '', null = True)
-    background_image = models.ImageField(upload_to = '', null = True)
+    profile_image = models.ImageField(blank = True)
+    background_image = models.ImageField(blank = True)
 
 
     def __str__(self):
@@ -55,21 +55,21 @@ class Home(models.Model):
 class About(models.Model):
     title = models.CharField(max_length = 100, null = True)
     subtitle = models.CharField(max_length = 200, null = True)
-    profile_image = models.ImageField(upload_to = 'about/')
-    background_image = models.ImageField(upload_to = '', null = True)
+    profile_image = models.ImageField(blank = True)
+    background_image = models.ImageField(blank = True)
     bio = models.TextField()
     bio1 = models.TextField(null = True)
     bio2 = models.TextField(null = True)
     bio3 = models.TextField(null = True)
     github_title = models.CharField(max_length = 50, null = True)
     github = models.URLField(blank = True)
-    git_image = models.ImageField(upload_to = '', null = True)
+    git_image = models.ImageField(blank = True)
     linkedin_title = models.CharField(max_length = 50, null = True)
     linkedin = models.URLField(blank = True)
-    lin_image = models.ImageField(upload_to = '', null = True)
+    lin_image = models.ImageField(blank = True)
     read = models.CharField(max_length = 50, null = True)
     button_text = models.CharField(max_length = 50, null = True)
-    resume = models.FileField(upload_to = 'resumes/', blank = True)
+    resume = models.FileField(blank = True)
 
     def __str__(self):
         return self.title
@@ -89,7 +89,7 @@ class Skill(models.Model):
     one_level4 = models.CharField(max_length = 100, blank = True)
     one_name5 = models.CharField(max_length = 100, blank = True)
     one_level5 = models.CharField(max_length = 100, blank = True)
-    logo1 = models.ImageField(upload_to = 'skills/', blank = True)
+    logo1 = models.ImageField(blank = True)
 
     category2 = models.CharField(max_length = 100, blank = True)
     two_name1 = models.CharField(max_length = 100, blank = True)
@@ -98,14 +98,14 @@ class Skill(models.Model):
     two_level2 = models.CharField(max_length = 100, blank = True)
     two_name3 = models.CharField(max_length = 100, blank = True)
     two_level3 = models.CharField(max_length = 100, blank = True)
-    logo2 = models.ImageField(upload_to = 'skills/', blank = True)
+    logo2 = models.ImageField(blank = True)
 
     category3 = models.CharField(max_length = 100, null =True)
     three_name1 = models.CharField(max_length = 100, blank = True)
     three_level1 = models.CharField(max_length = 100, blank = True)
     three_name2 = models.CharField(max_length = 100, blank = True)
     three_level2 = models.CharField(max_length = 100, blank = True)
-    logo3 = models.ImageField(upload_to = 'skills/', blank = True)
+    logo3 = models.ImageField(blank = True)
 
     category4 = models.CharField(max_length = 100, null = True)
     four_name1 = models.CharField(max_length = 100, blank = True)
@@ -114,7 +114,7 @@ class Skill(models.Model):
     four_level2 = models.CharField(max_length = 100, blank = True)
     four_name3 = models.CharField(max_length = 100, blank = True)
     four_level3 = models.CharField(max_length = 100, blank = True)
-    logo4 = models.ImageField(upload_to = 'skills/', blank = True)
+    logo4 = models.ImageField(blank = True)
 
     def __str__(self):
         return self.category                           
@@ -122,7 +122,7 @@ class Skill(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length = 200)
     description = models.TextField()
-    image = models.ImageField(upload_to = 'projects/', blank = True)
+    image = models.ImageField(blank = True)
     github_link = models.URLField(blank = True)
     demo_link = models.URLField(blank = True)
 
@@ -136,9 +136,9 @@ class ContactInfo(models.Model):
     phone = models.CharField(max_length = 100)
     linkedin = models.URLField(blank = True)
     github = models.URLField(blank = True)
-    linkedin_icon = models.ImageField(upload_to = "", blank = True)
-    github_icon = models.ImageField(upload_to = "", blank = True)
-    contact_image = models.ImageField(upload_to = "", blank = True)
+    linkedin_icon = models.ImageField(blank = True)
+    github_icon = models.ImageField(blank = True)
+    contact_image = models.ImageField(blank = True)
 
     def __str__(self):
         return self.full_name
@@ -148,7 +148,7 @@ class Contact(models.Model):
     desc = models.TextField(null = True)
     tagline = models.CharField(max_length = 50, null = True)
     button_Text = models.CharField(max_length = 50, null = True)
-    image = models.ImageField(upload_to ="", blank = True)
+    image = models.ImageField(blank = True)
 
     def __str__(self):
         return self.heading
@@ -193,7 +193,7 @@ class Certificate(models.Model):
 
 
 class AboutHero(models.Model):
-    background_image = models.ImageField(upload_to = '', blank = True)
+    background_image = models.ImageField(blank = True)
     desc = models.TextField(blank = True)
 
     def __str__(self):
@@ -202,11 +202,11 @@ class AboutHero(models.Model):
 class CTA(models.Model):
     text = models.CharField(max_length = 100)
     button_text = models.CharField(max_length = 50)
-    image = models.ImageField(upload_to = '', blank = True)
-    resume = models.FileField(upload_to = 'resumes/', blank = True)
+    image = models.ImageField(blank = True)
+    resume = models.FileField(blank = True)
 
 class ContactHero(models.Model):
-    image = models.ImageField(upload_to = "",blank = True)
+    image = models.ImageField(blank = True)
     title = models.CharField(max_length = 50)
     desc = models.TextField()
 
@@ -222,7 +222,7 @@ class ContactDetails(models.Model):
         return self.location
 
 class SkillHero(models.Model):
-    image = models.ImageField(upload_to = "", blank = True)
+    image = models.ImageField(blank = True)
     tagline = models.TextField(blank = True)
     item1 = models.CharField(max_length = 50, blank = True)
     item2 = models.CharField(max_length = 50, blank = True)
