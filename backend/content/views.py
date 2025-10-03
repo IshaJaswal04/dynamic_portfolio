@@ -4,11 +4,7 @@ from .serializers import (NavbarSerializers, FooterSerializers, HomeSerializers,
 CertificateSerializers, ExperienceSerializers, ContactSerializers, ContactformSerializers, AboutHeroSerializers, EducationSerializers, CTASerializers, ContactHeroSerializers, ContactDetailsSerializers, SkillHeroSerializers, FormdetailSerializers, SoftskillsSerializers, LogoSerializers)
 
 
-class ContextListCreateAPIView(generics.ListCreateAPIView):
-    def get_serializer_context(self):
-        context = super().get_serializer_context()
-        context["request"] = self.request
-        return context
+
 
 class LogoListCreateView(generics.ListCreateAPIView):
     queryset = Logo.objects.all()
