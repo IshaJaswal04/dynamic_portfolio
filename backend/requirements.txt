@@ -8,3 +8,6 @@ djangorestframework
 Pillow
 dj-database-url==1.2.0
 psycopg[binary]==3.2.3
+cloudinary
+django-cloudinary-storage
+
