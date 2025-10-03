@@ -3,9 +3,17 @@ from .models import Navbar, Footer, Home, About, Skill, Project, ContactInfo, Ce
 
 
 class LogoSerializers(serializers.ModelSerializer):
+    logo = serializers.SerializerMethodField()
+
     class Meta:
         model = Logo
         fields = "__all__"
+
+    def get_logo(self, obj):
+        if obj.logo:
+            # obj.logo.url gives full Cloudinary URL
+            return obj.logo.url
+        return None
 
 
 class SoftskillsSerializers(serializers.ModelSerializer):
